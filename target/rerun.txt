@@ -1,2 +1,2 @@
-file:src/test/Resources/features/FindTransactions.feature:27:53
+file:src/test/Resources/features/FindTransactions.feature:27
 file:src/test/Resources/features/AccountActivityNavigation.feature:20
