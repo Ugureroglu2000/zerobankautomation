@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features="src/test/Resources/features",
         glue="com/zerobank/Step_Definitions",
         dryRun=false
-     //   tags="@payee"
+       // tags="@AccountsActivity"
 )
 
 public class cukes_Runner {

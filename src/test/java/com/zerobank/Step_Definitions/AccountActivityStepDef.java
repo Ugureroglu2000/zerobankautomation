@@ -27,6 +27,8 @@ public class AccountActivityStepDef {
 
     @When("the user clicks on {string} link on the Account Summary page")
     public void the_user_clicks_on_link_on_the_Account_Summary_page(String string) {
+        AccountActivityPage accountActivityPage=new AccountActivityPage();
+        accountActivityPage.navigateToTab("Account Summary");
         String path="//*[.='"+string+"']";
         Driver.get().findElement(By.xpath(path)).click();
     }

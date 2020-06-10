@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>10 Jun 2020, 01:31</td>
+      <td>10 Jun 2020, 02:32</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@AccountsActivity</td>
-          <td      class="passed"    >13</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >7</td>
+          <td      class="failed"    >3</td>
+          <td     class="skipped"   >5</td>
           <td >0</td>
           <td >0</td>
           <td class="total">15</td>
 
-          <td  class="passed"    >4</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >2</td>
+          <td  class="failed"    >3</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="19689541200">19.689</td>
+          <td class="duration" data-value="178750053100">2:58.750</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,7 +173,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Activity</a>
+      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Summary</a>
     </div>
 
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.122</span>
+  <span class="lead-duration duration">1:15.267</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Savings account redirect</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">5.760</span>
+  <span class="lead-duration duration">7.004</span>
 
           </div>
 
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,15 +250,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">the user clicks on <span class="argument">&quot;Savings&quot;</span> link on the Account Summary page</span>
 
-  <span class="lead-duration duration">0.940</span>
+  <span class="lead-duration duration">1:15.266</span>
 
 </div>
 
@@ -266,6 +266,43 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[.='Savings']&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HLEND38', ip: '192.168.43.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6fb60792f500efbbb161afd0e54aacf6
+*** Element info: {Using=xpath, value=//*[.='Savings']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.zerobank.Step_Definitions.AccountActivityStepDef.the_user_clicks_on_link_on_the_Account_Summary_page(AccountActivityStepDef.java:33)
+	at &#10045;.the user clicks on &quot;Savings&quot; link on the Account Summary page(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/AccountActivityNavigation.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -281,11 +318,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">the Account Activity page should be displayed</span>
 
-  <span class="lead-duration duration">3.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -308,11 +345,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Account drop down should have <span class="argument">&quot;Savings&quot;</span> selected</span>
 
-  <span class="lead-duration duration">0.172</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -339,7 +376,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -351,13 +388,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.648</span>
+  <span class="lead-duration duration">1.449</span>
 
           </div>
 
@@ -366,6 +403,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-1301894111.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1301894111.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -378,7 +430,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Activity</a>
+      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Summary</a>
     </div>
 
 
@@ -388,12 +440,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.255</span>
+  <span class="lead-duration duration">1:15.289</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Brokerage account redirect</span>
 
@@ -404,11 +456,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -420,13 +472,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">4.401</span>
+  <span class="lead-duration duration">5.294</span>
 
           </div>
 
@@ -443,7 +495,264 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user clicks on <span class="argument">&quot;Brokerage&quot;</span> link on the Account Summary page</span>
+
+  <span class="lead-duration duration">1:15.289</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[.='Brokerage']&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HLEND38', ip: '192.168.43.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7330547abaaa9b1c4304e901ffbf005a
+*** Element info: {Using=xpath, value=//*[.='Brokerage']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.zerobank.Step_Definitions.AccountActivityStepDef.the_user_clicks_on_link_on_the_Account_Summary_page(AccountActivityStepDef.java:33)
+	at &#10045;.the user clicks on &quot;Brokerage&quot; link on the Account Summary page(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/AccountActivityNavigation.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">the Account Activity page should be displayed</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Account drop down should have <span class="argument">&quot;Brokerage&quot;</span> selected</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1.207</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-1301894111.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1301894111.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Summary</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+</div>
+
+
+  <span class="lead-duration duration">9.902</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Checking account redirect</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
+
+  <span class="lead-duration duration">4.696</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -455,15 +764,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Brokerage&quot;</span> link on the Account Summary page</span>
+  <span class="name">the user clicks on <span class="argument">&quot;Checking&quot;</span> link on the Account Summary page</span>
 
-  <span class="lead-duration duration">1.026</span>
+  <span class="lead-duration duration">6.682</span>
 
 </div>
 
@@ -515,214 +824,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Brokerage&quot;</span> selected</span>
-
-  <span class="lead-duration duration">0.220</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-8" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.673</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Activity</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
-</div>
-
-
-  <span class="lead-duration duration">4.122</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Checking account redirect</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-10" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">4.464</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Checking&quot;</span> link on the Account Summary page</span>
-
-  <span class="lead-duration duration">0.955</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
-
-  <span class="lead-duration duration">3.006</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
   <span class="name">Account drop down should have <span class="argument">&quot;Checking&quot;</span> selected</span>
 
-  <span class="lead-duration duration">0.161</span>
+  <span class="lead-duration duration">0.212</span>
 
 </div>
 
@@ -749,7 +853,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -761,13 +865,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.646</span>
+  <span class="lead-duration duration">0.627</span>
 
           </div>
 
@@ -788,7 +892,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Activity</a>
+      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Summary</a>
     </div>
 
 
@@ -798,10 +902,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.088</span>
+  <span class="lead-duration duration">8.450</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -814,11 +918,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -830,13 +934,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">4.335</span>
+  <span class="lead-duration duration">4.759</span>
 
           </div>
 
@@ -853,7 +957,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -865,7 +969,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -873,7 +977,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user clicks on <span class="argument">&quot;Credit Card&quot;</span> link on the Account Summary page</span>
 
-  <span class="lead-duration duration">0.079</span>
+  <span class="lead-duration duration">5.444</span>
 
 </div>
 
@@ -900,7 +1004,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the Account Activity page should be displayed</span>
 
-  <span class="lead-duration duration">3.008</span>
+  <span class="lead-duration duration">3.005</span>
 
 </div>
 
@@ -911,15 +1015,15 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
           <a>java.lang.AssertionError</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
+      <div id="msg-20" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.zerobank.Step_Definitions.AccountActivityStepDef.the_Account_Activity_page_should_be_displayed(AccountActivityStepDef.java:38)
+	at com.zerobank.Step_Definitions.AccountActivityStepDef.the_Account_Activity_page_should_be_displayed(AccountActivityStepDef.java:40)
 	at &#10045;.the Account Activity page should be displayed(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/AccountActivityNavigation.feature:22)
 </pre>
       </div>
@@ -971,7 +1075,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -983,13 +1087,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-17" class="inner-level collapse collapsable-details ">
+    <div id="after-21" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.195</span>
+  <span class="lead-duration duration">1.026</span>
 
           </div>
 
@@ -1000,15 +1104,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
       <a>screenshot</a>
-      <a href="embeddings/embedding_-709199467.png" download target="_blank">
+      <a href="embeddings/embedding_1040140519.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-18" class="collapse collapsable-details ">
+    <div id="embedding-22" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-709199467.png">
+        <img src="embeddings/embedding_1040140519.png">
       </div>
     </div>
   </div>
@@ -1025,7 +1129,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Activity</a>
+      <a href="report-feature_724963043.html">Navigating to specific accounts in Accounts Summary</a>
     </div>
 
 
@@ -1035,10 +1139,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.100</span>
+  <span class="lead-duration duration">9.839</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -1051,11 +1155,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-23" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1067,13 +1171,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-24" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">4.477</span>
+  <span class="lead-duration duration">4.594</span>
 
           </div>
 
@@ -1090,7 +1194,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1102,7 +1206,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details ">
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1110,7 +1214,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">the user clicks on <span class="argument">&quot;Loan&quot;</span> link on the Account Summary page</span>
 
-  <span class="lead-duration duration">0.957</span>
+  <span class="lead-duration duration">6.587</span>
 
 </div>
 
@@ -1137,7 +1241,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">the Account Activity page should be displayed</span>
 
-  <span class="lead-duration duration">3.005</span>
+  <span class="lead-duration duration">3.006</span>
 
 </div>
 
@@ -1164,7 +1268,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Account drop down should have <span class="argument">&quot;Loan&quot;</span> selected</span>
 
-  <span class="lead-duration duration">0.137</span>
+  <span class="lead-duration duration">0.245</span>
 
 </div>
 
@@ -1191,7 +1295,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1203,13 +1307,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-22" class="inner-level collapse collapsable-details ">
+    <div id="after-26" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.607</span>
+  <span class="lead-duration duration">0.641</span>
 
           </div>
 
