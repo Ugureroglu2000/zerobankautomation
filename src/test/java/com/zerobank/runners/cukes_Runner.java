@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features="src/test/Resources/features",
         glue="com/zerobank/Step_Definitions",
-        dryRun=false
-       // tags="@AccountsActivity"
+        dryRun=false,
+        tags="@AccountsActivity"
 )
 
 public class cukes_Runner {

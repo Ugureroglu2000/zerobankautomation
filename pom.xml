@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vytrack</groupId>
-    <artifactId>EU2CucumberSelenium</artifactId>
+    <groupId>com.zerobank</groupId>
+    <artifactId>zerobankautomation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -54,8 +54,9 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
-                    <testFailureIgnore>true</testFailureIgnore>
+
                     <runOrder>Alphabetical</runOrder>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <includes>
                         <include>**/*CukesRunner.java</include>
                     </includes>
@@ -69,9 +70,7 @@
                     <execution>
                         <id>execution</id>
                         <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
+                        <goals> <goal>generate</goal>    </goals>
                         <configuration>
                             <projectName>Cucumber HTML Reports</projectName>
                             <outputDirectory>${project.build.directory}</outputDirectory>
