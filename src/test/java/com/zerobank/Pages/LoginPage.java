@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     public WebElement submitButton;
     @FindBy(css = ".alert.alert-error")
     public WebElement failedMessage;
-
+    // parallel executions
     public void login(String user, String passw){
         username.sendKeys(user);
         password.sendKeys(passw);

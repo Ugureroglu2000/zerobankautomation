@@ -14,11 +14,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class AccountActivityStepDef {
+    AccountActivityPage accountActivityPage = new AccountActivityPage();
+    LoginPage loginPage = new LoginPage();
+ //   AccountSummaryPage accountSummaryPage = new AccountSummaryPage();
+ //   DashboardMenuPagePage dashboardMenuPagePage = new DashboardMenuPagePage();
+
 
     @Given("the user is logged in")
     public void the_user_is_logged_in() {
         Driver.get().get(ConfigurationReader.get("url"));
-        LoginPage loginPage=new LoginPage();
+//        LoginPage loginPage=new LoginPage();
         loginPage.signinButton.click();
         String user=ConfigurationReader.get("user_username");
         String pass=ConfigurationReader.get("user_password");
@@ -27,12 +32,15 @@ public class AccountActivityStepDef {
 
     @When("the user clicks on {string} link on the Account Summary page")
     public void the_user_clicks_on_link_on_the_Account_Summary_page(String string) {
+  //      AccountActivityPage accountActivityPage=new AccountActivityPage();
+        accountActivityPage.navigateToTab("Account Summary");
         String path="//*[.='"+string+"']";
         Driver.get().findElement(By.xpath(path)).click();
     }
     @Then("the Account Activity page should be displayed")
     public void the_Account_Activity_page_should_be_displayed() {
-      BrowserUtils.waitFor(3);
+    accountActivityPage.waitUntilLoaderScreenDisappear();
+    //  BrowserUtils.waitFor(3);
         String ActTitle=Driver.get().getTitle();
         System.out.println(ActTitle);
         Assert.assertTrue(ActTitle.contains("Account Activity"));
@@ -40,7 +48,8 @@ public class AccountActivityStepDef {
     }
     @Then("Account drop down should have {string} selected")
     public void account_drop_down_should_have_selected(String string) {
-        BrowserUtils.waitForClickablility(new AccountActivityPage().accountDropdownSelect().getFirstSelectedOption(),15);
+        //BrowserUtils.waitForClickablility(new AccountActivityPage().accountDropdownSelect().getFirstSelectedOption(),15);
+        accountActivityPage.waitUntilLoaderScreenDisappear();
         String Act=new AccountActivityPage().accountDropdownSelect().getFirstSelectedOption().getText();
         System.out.println(Act);
         Assert.assertEquals(string,Act);

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Navigating to specific accounts in Accounts Summary
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 114.911 s <<< FAILURE! - in Navigating to specific accounts in Accounts Summary
+Credit Card account redirect(Navigating to specific accounts in Accounts Summary)  Time elapsed: 19.874 s  <<< FAILURE!
+java.lang.AssertionError
+

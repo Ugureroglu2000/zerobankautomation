@@ -43,7 +43,8 @@ public class loginStepDef {
     }
     @Then("user can not log in")
     public void user_can_not_log_in() {
-        String Act=new LoginPage().failedMessage.getText();
+        LoginPage loginPage=new LoginPage();
+        String Act=loginPage.failedMessage.getText();
         Assert.assertEquals("Login and/or password are wrong.",Act);
     }
 
