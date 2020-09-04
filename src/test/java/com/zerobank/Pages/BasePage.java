@@ -125,5 +125,18 @@ public abstract class BasePage {
         }
 
     }
+    @FindBy(css = "div[class='loader-mask shown']")
+    @CacheLookup
+    protected WebElement loaderMask;
+
+    public void waitUntilLoaderScreenDisappear() {
+        try {
+            WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+            wait.until(ExpectedConditions.invisibilityOf(loaderMask));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }

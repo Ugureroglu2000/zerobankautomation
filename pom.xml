@@ -54,18 +54,17 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
-
-                    <runOrder>Alphabetical</runOrder>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <runOrder>Alphabetical</runOrder>
                     <includes>
-                        <include>**/*CukesRunner.java</include>
+                        <include>**/*cukes_Runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>net.masterthought</groupId>
+                    <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
+                    <version>5.0.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>

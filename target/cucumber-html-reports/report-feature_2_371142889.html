@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: Navigating to specific accounts in Accounts Summary</title>
+<title>Cucumber Reports (no 1) - Feature: Find Transactions in Account Activity</title>
 
 </head>
 <body>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Navigating to specific accounts in Accounts Summary</td>
-          <td      class="passed"    >18</td>
+          <td class="tagname">Find Transactions in Account Activity</td>
+          <td      class="passed"    >30</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">20</td>
+          <td class="total">34</td>
 
-          <td  class="passed"    >4</td>
+          <td  class="passed"    >3</td>
           <td  class="failed"    >1</td>
-          <td class="total">5</td>
+          <td class="total">4</td>
 
-          <td class="duration" data-value="73843824400">1:13.843</td>
+          <td class="duration" data-value="59349263200">59.349</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -171,13 +171,13 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+       <a href="report-tag_2503682452.html">@transactions</a>
 </div>
 
 
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Navigating to specific accounts in Accounts Summary</span>
+  <span class="name">Find Transactions in Account Activity</span>
 
 
 </div>
@@ -193,7 +193,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.679</span>
+  <span class="lead-duration duration">11.228</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,9 +234,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
+  <span class="name">the user accesses the Find Transactions tab</span>
 
-  <span class="lead-duration duration">4.679</span>
+  <span class="lead-duration duration">11.228</span>
 
 </div>
 
@@ -272,18 +272,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+       <a href="report-tag_2503682452.html">@transactions</a>
 </div>
 
 
-  <span class="lead-duration duration">11.117</span>
+  <span class="lead-duration duration">5.570</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Savings account redirect</span>
+  <span class="name">Search date range</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -314,7 +314,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">11.306</span>
+  <span class="lead-duration duration">10.526</span>
 
           </div>
 
@@ -349,36 +349,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Savings&quot;</span> link on the Account Summary page</span>
+  <span class="name">the user enters date range from <span class="argument">&quot;2012-09-01&quot;</span> to <span class="argument">&quot;2012-09-06&quot;</span></span>
 
-  <span class="lead-duration duration">7.154</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
-
-  <span class="lead-duration duration">3.037</span>
+  <span class="lead-duration duration">1.980</span>
 
 </div>
 
@@ -403,9 +376,171 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Savings&quot;</span> selected</span>
+  <span class="name">clicks search</span>
 
-  <span class="lead-duration duration">0.925</span>
+  <span class="lead-duration duration">0.248</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show transactions dates between <span class="argument">&quot;2012-09-01&quot;</span> to  <span class="argument">&quot;2012-09-06&quot;</span></span>
+
+  <span class="lead-duration duration">1.092</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the results should be sorted by most recent date</span>
+
+  <span class="lead-duration duration">0.391</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user enters date range from <span class="argument">&quot;2012-09-02&quot;</span> to <span class="argument">&quot;2012-09-06&quot;</span></span>
+
+  <span class="lead-duration duration">0.851</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">clicks search</span>
+
+  <span class="lead-duration duration">0.199</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show transactions dates between <span class="argument">&quot;2012-09-02&quot;</span> to  <span class="argument">&quot;2012-09-06&quot;</span></span>
+
+  <span class="lead-duration duration">0.489</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the results table should only not contain transactions dated <span class="argument">&quot;2012-09-01&quot;</span></span>
+
+  <span class="lead-duration duration">0.316</span>
 
 </div>
 
@@ -450,7 +585,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.535</span>
+  <span class="lead-duration duration">1.088</span>
 
           </div>
 
@@ -475,7 +610,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.064</span>
+  <span class="lead-duration duration">12.693</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -516,9 +651,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
+  <span class="name">the user accesses the Find Transactions tab</span>
 
-  <span class="lead-duration duration">5.064</span>
+  <span class="lead-duration duration">12.693</span>
 
 </div>
 
@@ -554,18 +689,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+       <a href="report-tag_2503682452.html">@transactions</a>
 </div>
 
 
-  <span class="lead-duration duration">13.241</span>
+  <span class="lead-duration duration">5.422</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Brokerage account redirect</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Search description</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -596,7 +731,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">6.954</span>
+  <span class="lead-duration duration">7.371</span>
 
           </div>
 
@@ -631,36 +766,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Brokerage&quot;</span> link on the Account Summary page</span>
+  <span class="name">the user enters description <span class="argument">&quot;ONLINE&quot;</span></span>
 
-  <span class="lead-duration duration">7.283</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
-
-  <span class="lead-duration duration">3.057</span>
+  <span class="lead-duration duration">2.668</span>
 
 </div>
 
@@ -685,9 +793,144 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Brokerage&quot;</span> selected</span>
+  <span class="name">clicks search</span>
 
-  <span class="lead-duration duration">2.900</span>
+  <span class="lead-duration duration">0.365</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show descriptions containing <span class="argument">&quot;ONLINE&quot;</span></span>
+
+  <span class="lead-duration duration">0.317</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user enters description <span class="argument">&quot;OFFICE&quot;</span></span>
+
+  <span class="lead-duration duration">1.597</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">clicks search</span>
+
+  <span class="lead-duration duration">0.377</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show descriptions containing <span class="argument">&quot;OFFICE&quot;</span></span>
+
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-But passed">
+  <span class="keyword indention">But</span>
+  <span class="name">results table should not show descriptions containing <span class="argument">&quot;ONLINE&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -732,7 +975,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.474</span>
+  <span class="lead-duration duration">1.390</span>
 
           </div>
 
@@ -757,7 +1000,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.998</span>
+  <span class="lead-duration duration">9.958</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -798,9 +1041,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
+  <span class="name">the user accesses the Find Transactions tab</span>
 
-  <span class="lead-duration duration">3.998</span>
+  <span class="lead-duration duration">9.958</span>
 
 </div>
 
@@ -836,18 +1079,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+       <a href="report-tag_2503682452.html">@transactions</a>
 </div>
 
 
-  <span class="lead-duration duration">10.151</span>
+  <span class="lead-duration duration">1.317</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Checking account redirect</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Search description case insensitive</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -878,7 +1121,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">6.230</span>
+  <span class="lead-duration duration">6.533</span>
 
           </div>
 
@@ -913,36 +1156,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Checking&quot;</span> link on the Account Summary page</span>
+  <span class="name">the user enters description <span class="argument">&quot;ONLINE&quot;</span></span>
 
-  <span class="lead-duration duration">6.874</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
-
-  <span class="lead-duration duration">3.012</span>
+  <span class="lead-duration duration">0.677</span>
 
 </div>
 
@@ -967,9 +1183,117 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Checking&quot;</span> selected</span>
+  <span class="name">clicks search</span>
 
-  <span class="lead-duration duration">0.264</span>
+  <span class="lead-duration duration">0.142</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show descriptions containing <span class="argument">&quot;ONLINE&quot;</span></span>
+
+  <span class="lead-duration duration">0.173</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user enters description <span class="argument">&quot;online&quot;</span></span>
+
+  <span class="lead-duration duration">0.213</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">clicks search</span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should only show descriptions containing <span class="argument">&quot;ONLINE&quot;</span></span>
+
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -1014,7 +1338,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.652</span>
+  <span class="lead-duration duration">0.679</span>
 
           </div>
 
@@ -1039,7 +1363,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.538</span>
+  <span class="lead-duration duration">11.968</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
@@ -1080,9 +1404,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
+  <span class="name">the user accesses the Find Transactions tab</span>
 
-  <span class="lead-duration duration">4.538</span>
+  <span class="lead-duration duration">11.968</span>
 
 </div>
 
@@ -1118,18 +1442,18 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
+       <a href="report-tag_2503682452.html">@transactions</a>
 </div>
 
 
-  <span class="lead-duration duration">8.635</span>
+  <span class="lead-duration duration">1.190</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Credit Card account redirect</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Type</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1160,7 +1484,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">5.779</span>
+  <span class="lead-duration duration">4.989</span>
 
           </div>
 
@@ -1193,11 +1517,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Credit Card&quot;</span> link on the Account Summary page</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">clicks search</span>
 
-  <span class="lead-duration duration">5.630</span>
+  <span class="lead-duration duration">0.296</span>
 
 </div>
 
@@ -1220,11 +1544,119 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
+  <span class="name">results table should show at least one result under <span class="argument">&quot;Deposit&quot;</span></span>
 
-  <span class="lead-duration duration">3.005</span>
+  <span class="lead-duration duration">0.420</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should show at least one result under <span class="argument">&quot;Withdrawal&quot;</span></span>
+
+  <span class="lead-duration duration">0.069</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects type &ldquo;Deposit&rdquo;</span>
+
+  <span class="lead-duration duration">0.214</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should show at least one result under <span class="argument">&quot;Deposit&quot;</span></span>
+
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-But failed">
+  <span class="keyword indention">But</span>
+  <span class="name">results table should show no result under <span class="argument">&quot;Withdrawal&quot;</span></span>
+
+  <span class="lead-duration duration">0.146</span>
 
 </div>
 
@@ -1236,15 +1668,16 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
-          <a>java.lang.AssertionError</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-24" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.zerobank.Step_Definitions.AccountActivityStepDef.the_Account_Activity_page_should_be_displayed(AccountActivityStepDef.java:40)
-	at &#10045;.the Account Activity page should be displayed(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/AccountActivityNavigation.feature:22)
+        <pre>java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;0&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.zerobank.Step_Definitions.FindTransactionsStepDef.results_table_should_show_no_result_under(FindTransactionsStepDef.java:135)
+	at &#10045;.results table should show no result under &quot;Withdrawal&quot;(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/FindTransactions.feature:47)
 </pre>
       </div>
     </div>
@@ -1264,9 +1697,63 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Credit Card&quot;</span> selected</span>
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">user selects type &ldquo;Withdrawal&rdquo;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">results table should show at least one result under <span class="argument">&quot;Withdrawal&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-But skipped">
+  <span class="keyword indention">But</span>
+  <span class="name">results table should show no result under <span class="argument">&quot;Deposit&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1313,7 +1800,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.916</span>
+  <span class="lead-duration duration">1.225</span>
 
           </div>
 
@@ -1326,299 +1813,17 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-26" class="collapsable-control">
       <a>screenshot</a>
-      <a href="embeddings/embedding_-464661129.png" download target="_blank">
+      <a href="embeddings/embedding_433996243.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-26" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-464661129.png">
+        <img src="embeddings/embedding_433996243.png">
       </div>
     </div>
   </div>
   </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">2.768</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-27" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-28" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the user is logged in</span>
-
-  <span class="lead-duration duration">2.768</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_3750793588.html">@AccountsActivity</a>
-</div>
-
-
-  <span class="lead-duration duration">9.648</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Loan account redirect</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-29" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-30" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">5.068</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-31" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user clicks on <span class="argument">&quot;Loan&quot;</span> link on the Account Summary page</span>
-
-  <span class="lead-duration duration">6.424</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the Account Activity page should be displayed</span>
-
-  <span class="lead-duration duration">3.004</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Account drop down should have <span class="argument">&quot;Loan&quot;</span> selected</span>
-
-  <span class="lead-duration duration">0.219</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-32" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.709</span>
-
-          </div>
-
-
-
-
-
-
 
         </div>
     </div>

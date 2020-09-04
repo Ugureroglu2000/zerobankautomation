@@ -37,7 +37,7 @@ Feature: Find Transactions in Account Activity
     Examples:
       | item   | desc   | item2  | desc2  |
       | ONLINE | ONLINE | online | ONLINE |
-
+  @wip
   Scenario Outline: Type
     And clicks search
     Then results table should show at least one result under "<Deposit>"
@@ -48,6 +48,6 @@ Feature: Find Transactions in Account Activity
     When user selects type “<Withdrawal>”
     Then results table should show at least one result under "<Withdrawal>"
     But results table should show no result under "<Deposit>"
-Examples:
+  Examples:
     |Deposit|Withdrawal|
     |Deposit|Withdrawal|
