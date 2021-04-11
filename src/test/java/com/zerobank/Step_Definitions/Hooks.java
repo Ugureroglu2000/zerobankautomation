@@ -16,7 +16,7 @@ public class Hooks {
     public void setUp(){
      Driver.get().get(ConfigurationReader.get("url"));
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //   System.out.println("\t coming from Before");
+        //   System.out.println("\t coming from Before"); ??
     }
 
     @After
