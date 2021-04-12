@@ -1,4 +1,4 @@
-@payee @wip
+@payee
 Feature: Add new payee under pay bills
   Scenario: Add a new payee
     Given Add New Payee tab
