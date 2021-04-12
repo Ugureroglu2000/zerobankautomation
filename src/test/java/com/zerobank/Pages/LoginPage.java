@@ -11,8 +11,10 @@ public class LoginPage extends BasePage {
 
     @FindBy(css = ".signin.btn.btn-info")
     public WebElement signinButton;
+    
     @FindBy(xpath = "//*[@name='user_login']")
     public WebElement username;
+    
     @FindBy(xpath = "//*[@name='user_password']")
     public WebElement password;
     @FindBy (xpath = "//*[@name='submit']")
