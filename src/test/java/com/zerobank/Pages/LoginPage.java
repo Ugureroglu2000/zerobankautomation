@@ -17,10 +17,13 @@ public class LoginPage extends BasePage {
     
     @FindBy(xpath = "//*[@name='user_password']")
     public WebElement password;
+    
     @FindBy (xpath = "//*[@name='submit']")
     public WebElement submitButton;
+    
     @FindBy(css = ".alert.alert-error")
     public WebElement failedMessage;
+    
     // parallel executions
     public void login(String user, String passw){
         username.sendKeys(user);
