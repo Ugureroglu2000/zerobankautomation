@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 public class AccountActivityStepDef {
     AccountActivityPage accountActivityPage = new AccountActivityPage();
     LoginPage loginPage = new LoginPage();
+    
  //   AccountSummaryPage accountSummaryPage = new AccountSummaryPage();
  //   DashboardMenuPagePage dashboardMenuPagePage = new DashboardMenuPagePage();
 
@@ -62,8 +63,8 @@ public class AccountActivityStepDef {
     }
     @Then("Account drop down should have Brokerage selected")
     public void account_drop_down_should_have_Brokerage_selected() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        
+     
     }
 
     @When("the user clicks on Checking link on the Account Summary page")
