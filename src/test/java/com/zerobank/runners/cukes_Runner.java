@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         glue="com/zerobank/Step_Definitions",
         dryRun=false,
         tags="@login"
-        // deneme ??git add
+
 
 )
 

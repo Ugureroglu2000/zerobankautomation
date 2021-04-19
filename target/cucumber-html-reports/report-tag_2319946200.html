@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>04 Sep 2020, 02:55</td>
+      <td>27 Mar 2021, 05:21</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@canlogin</td>
-          <td      class="passed"    >2</td>
-          <td >0</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">2</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1875098600">1.875</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1607912800">1.607</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_864386012.html">Login</a>
+      <a href="report-feature_1_864386012.html">Login</a>
     </div>
 
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.875</span>
+  <span class="lead-duration duration">1.607</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">user can login with valid credentials</span>
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -222,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">5.250</span>
+  <span class="lead-duration duration">3.930</span>
 
           </div>
 
@@ -239,9 +239,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -251,7 +251,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user gives <span class="argument">&quot;user&quot;</span> credentials</span>
 
-  <span class="lead-duration duration">1.858</span>
+  <span class="lead-duration duration">1.599</span>
 
 </div>
 
@@ -282,11 +282,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">user can log in</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -294,6 +294,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.zerobank.Step_Definitions.loginStepDef.user_can_log_in(loginStepDef.java:33)
+	at &#10045;.user can log in(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/login.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -313,7 +330,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -325,13 +342,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.zerobank.Step_Definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.108</span>
+  <span class="lead-duration duration">0.986</span>
 
           </div>
 
@@ -340,6 +357,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_1930190992.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1930190992.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

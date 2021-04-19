@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Login" time="27.016" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Find Transactions in Account Activity" time="22.141" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="webdriver.chrome.driver" value="C:\Users\HP\.m2\repository\webdriver\chromedriver\win32\89.0.4389.23\chromedriver.exe"/>
@@ -57,13 +57,72 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="user can login with valid credentials" classname="Login" time="6.997">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-</failure>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 12920
+  <testcase name="Search date range" classname="Find Transactions in Account Activity" time="22.141">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Account Activity&apos;)]&quot;}&#10;  (Session info: chrome=89.0.4389.90)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-HLEND38&apos;, ip: &apos;192.168.43.223&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 261814b83c91c4e1e2d25925d3b0bebd&#10;*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Account Activity&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Account Activity')]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HLEND38', ip: '192.168.43.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 261814b83c91c4e1e2d25925d3b0bebd
+*** Element info: {Using=xpath, value=//*[contains(text(),'Account Activity')]}
+</error>
+    <system-out><![CDATA[Mar 27, 2021 5:20:32 AM io.cucumber.junit.Cucumber <init>
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31mfile:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/login.feature:6&amp#27;[0m# user can login with valid credentials
+&amp#27;[31mfile:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/FindTransactions.feature:7&amp#27;[0m# Search date range
+
+6 Scenarios (&amp#27;[31m2 failed&amp#27;[0m, &amp#27;[32m4 passed&amp#27;[0m)
+24 Steps (&amp#27;[31m2 failed&amp#27;[0m, &amp#27;[36m8 skipped&amp#27;[0m, &amp#27;[32m14 passed&amp#27;[0m)
+0m27.016s
+
+
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.zerobank.Step_Definitions.loginStepDef.user_can_log_in(loginStepDef.java:33)
+	at ?.user can log in(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/login.feature:8)
+
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Account Activity')]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HLEND38', ip: '192.168.43.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53432}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 261814b83c91c4e1e2d25925d3b0bebd
+*** Element info: {Using=xpath, value=//*[contains(text(),'Account Activity')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at com.zerobank.Step_Definitions.FindTransactionsStepDef.the_user_accesses_the_Find_Transactions_tab(FindTransactionsStepDef.java:29)
+	at ?.the user accesses the Find Transactions tab(file:///C:/Users/HP/IdeaProjects/fromgit/zerobankautomation/src/test/Resources/features/FindTransactions.feature:5)
+
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 37073
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
@@ -71,8 +130,4 @@ Mar 27, 2021 5:20:34 AM org.openqa.selenium.remote.ProtocolHandshake createSessi
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="user can not login with invalid credentials" classname="Login" time="4.974"/>
-  <testcase name="user can not login with invalid credentials" classname="Login" time="5.281"/>
-  <testcase name="user can not login with invalid credentials" classname="Login" time="4.952"/>
-  <testcase name="user can not login with invalid credentials" classname="Login" time="4.812"/>
 </testsuite>

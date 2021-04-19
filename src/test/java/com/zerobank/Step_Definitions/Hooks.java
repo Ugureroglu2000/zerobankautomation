@@ -15,6 +15,7 @@ public class Hooks {
     @Before
     public void setUp(){
      Driver.get().get(ConfigurationReader.get("url"));
+     Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //   System.out.println("\t coming from Before");
     }
@@ -23,6 +24,7 @@ public class Hooks {
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
+//            scenario.embed(screenshot,"image/png","screenshot");
             scenario.attach(screenshot,"image/png","screenshot");
         }
         Driver.closeDriver();
