@@ -1,6 +1,17 @@
+com\zerobank\Step_Definitions\loginStepDef.class
+com\zerobank\Pages\PaybillsPage.class
+com\zerobank\runners\cukes_Runner.class
 com\zerobank\runners\FailedTestRunner.class
 com\zerobank\utilities\BrowserUtils$1.class
 com\zerobank\utilities\BrowserUtils.class
+com\zerobank\Pages\BasePage.class
+com\zerobank\Step_Definitions\Hooks.class
+com\zerobank\Step_Definitions\FindTransactionsStepDef.class
+com\zerobank\Pages\ZeroPage.class
+com\zerobank\Pages\AccountActivityPage.class
+com\zerobank\Step_Definitions\PurForcurrencyStepDef.class
 com\zerobank\utilities\Driver.class
 com\zerobank\Pages\LoginPage.class
+com\zerobank\Step_Definitions\AccountActivityStepDef.class
+com\zerobank\Step_Definitions\payeeStepDef.class
 com\zerobank\utilities\ConfigurationReader.class

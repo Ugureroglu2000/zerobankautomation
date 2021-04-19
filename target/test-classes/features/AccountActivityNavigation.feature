@@ -1,5 +1,5 @@
 @AccountsActivity
-Feature: Navigating to specific accounts in Accounts Activity
+Feature: Navigating to specific accounts in Accounts Summary
 
     Background:
     Given the user is logged in
@@ -17,6 +17,7 @@ Feature: Navigating to specific accounts in Accounts Activity
     When the user clicks on "Checking" link on the Account Summary page
     Then the Account Activity page should be displayed
     And Account drop down should have "Checking" selected
+  @wip
   Scenario: Credit Card account redirect
     When the user clicks on "Credit Card" link on the Account Summary page
     Then the Account Activity page should be displayed

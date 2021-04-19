@@ -15,6 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public abstract class BasePage {
+     public BasePage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
     @FindBy(xpath = "//ul[@class='nav nav-tabs']/li")
     public List<WebElement> menuOptions;
@@ -55,9 +58,7 @@ public abstract class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
-    public BasePage() {
-        PageFactory.initElements(Driver.get(), this);
-    }
+   
 
 
     /**
@@ -122,6 +123,19 @@ public abstract class BasePage {
             new Actions(Driver.get()).moveToElement(tabElement).pause(200).doubleClick(tabElement).build().perform();
         } catch (Exception e) {
             BrowserUtils.clickWithWait(By.xpath(tabLocator), 5);
+        }
+
+    }
+    @FindBy(css = "div[class='loader-mask shown']")
+    @CacheLookup
+    protected WebElement loaderMask;
+
+    public void waitUntilLoaderScreenDisappear() {
+        try {
+            WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+            wait.until(ExpectedConditions.invisibilityOf(loaderMask));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }

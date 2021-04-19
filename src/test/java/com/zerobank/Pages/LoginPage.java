@@ -11,15 +11,20 @@ public class LoginPage extends BasePage {
 
     @FindBy(css = ".signin.btn.btn-info")
     public WebElement signinButton;
+    
     @FindBy(xpath = "//*[@name='user_login']")
     public WebElement username;
+    
     @FindBy(xpath = "//*[@name='user_password']")
     public WebElement password;
+    
     @FindBy (xpath = "//*[@name='submit']")
     public WebElement submitButton;
+    
     @FindBy(css = ".alert.alert-error")
     public WebElement failedMessage;
-
+    
+    // parallel executions
     public void login(String user, String passw){
         username.sendKeys(user);
         password.sendKeys(passw);
