@@ -28,8 +28,8 @@ public class loginStepDef {
     }
     @Then("user can log in")
     public void user_can_log_in() {
-        //ZeroPage zeroPage=new ZeroPage();
-       // System.out.println(Driver.get().getTitle());
+        ZeroPage zeroPage=new ZeroPage();
+        System.out.println(Driver.get().getTitle());
              Assert.assertTrue(Driver.get().getTitle().contains("Zero"));
     }
 
