@@ -24,6 +24,7 @@ public class FindTransactionsStepDef {
         BrowserUtils.waitFor(2);
         String user=ConfigurationReader.get("user_username");
         String pass=ConfigurationReader.get("user_password");
+        
         new LoginPage().login(user,pass);
         BrowserUtils.waitFor(3);
         new AccountActivityPage().AccountActivity.click();
@@ -97,7 +98,7 @@ public class FindTransactionsStepDef {
      //   AccountActivityPage accountActivityPage=new AccountActivityPage();
        // accountActivityPage.FindButton.click();
      //   String desc=accountActivityPage.DescriptionList.get(0).getText();
-    //String list=new AccountActivityPage().DescriptionListString().toString();
+    //String list=new AccountActivityPage().DescriptionListString().toString()  ; 
         System.out.println(desc);
         Assert.assertTrue(desc.contains(string));
     }

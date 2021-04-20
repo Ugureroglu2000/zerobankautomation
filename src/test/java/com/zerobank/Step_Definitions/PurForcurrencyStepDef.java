@@ -64,6 +64,7 @@ public class PurForcurrencyStepDef {
     @When("user tries to calculate cost without entering a value")
     public void user_tries_to_calculate_cost_without_entering_a_value() {
        PaybillsPage paybillsPage=new PaybillsPage();
+        
        paybillsPage.SelectedCurrencyRadiobutton.click();
        paybillsPage.CalculateCostButton.click();
 
