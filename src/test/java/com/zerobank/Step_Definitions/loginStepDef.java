@@ -23,7 +23,7 @@ public class loginStepDef {
      String username=ConfigurationReader.get(string+"_username");
      String password=ConfigurationReader.get(string+"_password");
      new LoginPage().login(username,password);
-//         System.out.println("When");
+         System.out.println("When");
 
     }
     @Then("user can log in")
