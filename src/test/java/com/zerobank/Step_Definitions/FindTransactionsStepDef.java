@@ -42,11 +42,14 @@ public class FindTransactionsStepDef {
    accountActivityPage.DateTo.sendKeys(to);
         System.out.println("2");
      }
+    
+    
     @When("clicks search")
     public void clicks_search() {
         new AccountActivityPage().FindButton.click();
     }
 
+    
     @Then("results table should only show transactions dates between {string} to  {string}")
     public void results_table_should_only_show_transactions_dates_between_to(String string, String string2) {
         System.out.println("3");
@@ -61,6 +64,8 @@ public class FindTransactionsStepDef {
         Assert.assertTrue(bool);
         System.out.println("4.6");
     }
+    
+    
     @Then("the results should be sorted by most recent date")
     public void the_results_should_be_sorted_by_most_recent_date() {
         List<Integer> Dates=new AccountActivityPage().DateListInteger();
@@ -69,6 +74,8 @@ public class FindTransactionsStepDef {
         }
         System.out.println("5");
     }
+    
+    
     @Then("the results table should only not contain transactions dated {string}")
     public void the_results_table_should_only_not_contain_transactions_dated(String string) {
         int opt=Integer.parseInt(string.substring(0,4)+string.substring(5,7)+string.substring(8));
@@ -113,6 +120,7 @@ public class FindTransactionsStepDef {
 //            Assert.assertTrue(new AccountActivityPage().DescriptionListString().contains(string));}
     }
 
+    
     @Then("results table should show at least one result under {string}")
     public void results_table_should_show_at_least_one_result_under(String string) {
         Assert.assertTrue(new AccountActivityPage().DepositListString().size()>0);
@@ -121,6 +129,8 @@ public class FindTransactionsStepDef {
     public void results_table_should_show_at_least_one_result_under_Withdrawal() {
         Assert.assertTrue(new AccountActivityPage().WithdrawalListString().size()>0);
     }
+    
+    
     @When("user selects type “Deposit”")
     public void user_selects_type_Deposit() {
         Select type=new Select(new AccountActivityPage().typeTransaction);
@@ -128,6 +138,8 @@ public class FindTransactionsStepDef {
         new AccountActivityPage().FindButton.click();
 
     }
+    
+    
     @Then("results table should show no result under {string}")
     public void results_table_should_show_no_result_under(String string) {
        AccountActivityPage accountActivityPage=new AccountActivityPage();
@@ -135,12 +147,16 @@ public class FindTransactionsStepDef {
        BrowserUtils.waitForPageToLoad(5);
         Assert.assertEquals(new AccountActivityPage().WithdrawalListString().size(),0);
     }
+    
+    
     @When("user selects type “Withdrawal”")
     public void user_selects_type_Withdrawal() {
         Select type=new Select(new AccountActivityPage().typeTransaction);
         type.selectByValue("WITHDRAWAL");
         new AccountActivityPage().FindButton.click();
     }
+    
+    
     @Then("results table should show no result under Deposit")
     public void results_table_should_show_no_result_under_Deposit() {
         Assert.assertEquals(new AccountActivityPage().DepositListString().size(),0);}
